@@ -52,7 +52,7 @@ defmodule AssertHTML.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:floki, "~> 0.37"},
+      {:floki, ">= 0.30.0"},
       # {:html5ever, "~> 0.15.0"},
       # {:fast_html, ">= 0.0.1"},
 
