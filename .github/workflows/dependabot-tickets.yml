@@ -19,7 +19,7 @@ jobs:
           fogbugz_project: ${{ secrets.FOGBUGZ_PROJECT }}
           fogbugz_category: ${{ secrets.FOGBUGZ_CATEGORY}}
           planview_api_url: ${{ secrets.PLANVIEW_API_URL }}
-          planview_auth: ${{ secrets.PLANVIEW_AUTH }}
+          planview_auth: ${{ secrets.LEANKIT_AUTH }}
           planview_board_id: ${{ secrets.PLANVIEW_BOARD_ID }}
           planview_lane_id: ${{ secrets.PLANVIEW_LANE_ID }}
           planview_type_id: ${{ secrets.PLANVIEW_TYPE_ID }}
