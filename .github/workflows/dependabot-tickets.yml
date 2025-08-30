@@ -10,6 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     name: Check for Dependabot Pull Requests
     steps:
+      - name: Debug Secrets
+        run: |
+          echo "FOGBUGZ_API_URL=${{ secrets.FOGBUGZ_API_URL }}"
+          echo "FOGBUGZ_TOKEN=${{ secrets.FOGBUGZ_API_TOKEN }}"
+          echo "FOGBUGZ_PROJECT=${{ secrets.FOGBUGZ_PROJECT }}"
+          echo "FOGBUGZ_CATEGORY=${{ secrets.FOGBUGZ_CATEGORY }}"
+          echo "PLANVIEW_API_URL=${{ secrets.PLANVIEW_API_URL }}"
+          echo "PLANVIEW_AUTH=${{ secrets.LEANKIT_AUTH }}"
+          echo "PLANVIEW_BOARD_ID=${{ secrets.PLANVIEW_BOARD_ID }}"
+          echo "PLANVIEW_LANE_ID=${{ secrets.PLANVIEW_LANE_ID }}"
+          echo "PLANVIEW_TYPE_ID=${{ secrets.PLANVIEW_TYPE_ID }}"
       - name: Step 1
         id: step_1
         uses: ARPC/dependabot-tickets@v0.2.4
